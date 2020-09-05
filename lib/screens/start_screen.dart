@@ -1,3 +1,4 @@
+import 'package:assignment1_Creative_Work/screens/dragable_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -15,13 +16,14 @@ class StartScreen extends StatelessWidget {
           child: Column(
             children: <Widget>[
               RaisedButton.icon(
-                onPressed: () => print("hello"),
+                onPressed: () =>
+                    Navigator.pushNamed(context, DragableScreen.routeName),
                 icon: Icon(
-                  Icons.ac_unit,
+                  Icons.drag_handle,
                   color: Colors.black,
                 ),
                 label: Text(
-                  "Icon Button1",
+                  "Drag",
                   style: TextStyle(color: Colors.black),
                 ),
                 color: Colors.white,
