@@ -1,3 +1,4 @@
+import 'package:assignment1_Creative_Work/screens/card_screen.dart';
 import 'package:assignment1_Creative_Work/screens/dragable_screen.dart';
 import 'package:assignment1_Creative_Work/screens/start_screen.dart';
 import 'package:flutter/cupertino.dart';
@@ -19,6 +20,7 @@ class CreativeWork extends StatelessWidget {
       routes: {
         StartScreen.routeName: (context) => StartScreen(),
         DragableScreen.routeName: (context) => DragableScreen(),
+        CardScreen.routeName: (context) => CardScreen(),
       },
     );
   }

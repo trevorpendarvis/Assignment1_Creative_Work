@@ -1,3 +1,4 @@
+import 'package:assignment1_Creative_Work/screens/card_screen.dart';
 import 'package:assignment1_Creative_Work/screens/dragable_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -32,13 +33,14 @@ class StartScreen extends StatelessWidget {
                 height: 20.0,
               ),
               RaisedButton.icon(
-                onPressed: () => print("hello"),
+                onPressed: () =>
+                    Navigator.pushNamed(context, CardScreen.routeName),
                 icon: Icon(
-                  Icons.access_alarm,
+                  Icons.credit_card,
                   color: Colors.black,
                 ),
                 label: Text(
-                  "Icon Button2",
+                  "Card",
                   style: TextStyle(color: Colors.black),
                 ),
                 color: Colors.white,
