@@ -1,5 +1,6 @@
 import 'package:assignment1_Creative_Work/screens/card_screen.dart';
 import 'package:assignment1_Creative_Work/screens/dragable_screen.dart';
+import 'package:assignment1_Creative_Work/screens/drawer_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -49,13 +50,14 @@ class StartScreen extends StatelessWidget {
                 height: 20.0,
               ),
               RaisedButton.icon(
-                onPressed: () => print("hello"),
+                onPressed: () =>
+                    Navigator.pushNamed(context, DrawerScreen.routeName),
                 icon: Icon(
-                  Icons.access_time,
+                  Icons.desktop_mac,
                   color: Colors.black,
                 ),
                 label: Text(
-                  "Icon Button3",
+                  "Drawer Screen",
                   style: TextStyle(color: Colors.black),
                 ),
                 color: Colors.white,
